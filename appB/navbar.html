@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+</head>
+<style>
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        height: 1.5rem;
+    }
+    .user-login{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1rem 0.4rem; 
+
+        border: 2px solid grey;
+        border-radius: 2rem;
+    }
+    .user-login img{
+        height: 1.6rem;
+    }
+    .user-login p {
+        margin: 0.5rem auto;
+    }
+
+
+    .logo-home{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .logo-text{
+        margin: 0.5rem auto;
+        padding: 0 0.2rem;
+    }
+
+    .search{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+        align-items: center;
+        justify-items: center;
+
+        border: 2px solid grey;
+        border-radius: 2rem;
+        padding: 0.3rem;
+        width: 40%;
+
+    }
+    .search input{
+        border: none;
+        border-radius: 2rem;
+        width: 100%;
+        height: 2rem;       
+    }
+    .search-input{
+        width: 90%;
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo-home">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="youtube">
+
+            </div>
+            <div>
+                <h3 class="logo-text">Youtube</h3>
+            </div>
+
+        </div>
+
+        <div class="search">
+            <div class="search-input">
+                <input class="search-bar" type="search" name="srch" id="srch">
+            </div>
+            <div class="search-logo">
+                <img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="search">
+            </div>
+
+        </div>
+
+        <div class="user-login">
+            <div>
+                <img src="https://png.pngtree.com/png-vector/20191009/ourmid/pngtree-user-icon-png-image_1796659.jpg" alt="user">
+            </div>
+            <div>
+                <p>Acceder</p>
+            </div>
+        </div>
+
+
+    </nav>
+    
+</body>
+</html>
