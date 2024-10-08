@@ -50,18 +50,19 @@
     }
 
     .search{
+        border: 2px solid grey;
+        border-radius: 2rem;
+        padding: 0.3rem;
+        width: 40%;
+
+    }
+    .search form{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content:space-between;
         align-items: center;
         justify-items: center;
-
-        border: 2px solid grey;
-        border-radius: 2rem;
-        padding: 0.3rem;
-        width: 40%;
-
     }
     .search input{
         border: none;
@@ -86,15 +87,18 @@
 
         </div>
 
-        <div class="search">
-            <div class="search-input">
-                <input class="search-bar" type="search" name="srch" id="srch">
-            </div>
-            <div class="search-logo">
-                <img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="search">
+
+            <div class="search">
+                <form action="https://webhook.site/22d3d295-7f59-463c-9c8c-74fd9ed480a5" method="post">
+                    <div class="search-input">           
+                        <input class="search-bar" type="search" name="srch" id="srch">
+                    </div>
+                    <div class="search-logo">
+                        <input type="submit" value="Search">
+                    </div>
+                </form>
             </div>
 
-        </div>
 
         <div class="user-login">
             <div>
@@ -109,4 +113,7 @@
     </nav>
     
 </body>
+<script>
+
+</script>
 </html>
