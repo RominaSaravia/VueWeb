@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clase 10/10</title>
+</head>
+
+<body>
+
+    <form action="https://webhook.site/468ee79d-7b09-4d25-9d10-c0e733d30ac7" method="post" onsubmit="return checkvalid()" id="fromId">
+        <h3>Login</h3>
+        <div class="user-name">
+            <div class="user-input">
+                <label for="username">First Name</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <div class="user-input">
+                <label for="username">Last Name</label>
+                <input type="text" name="username2" id="username2" required>
+            </div>
+        </div>
+
+        <div class="user-email">
+            <label for="username">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <label for="username">Zip-Code</label>
+        <input type="text" name="zipCode" id="zipCode">
+
+        <input type="submit" value="login">
+
+    </form>
+
+    <a href="" target="_blank" rel="noopener noreferrer">¿Olvidaste la contraseña?</a>
+
+</body>
+
+<script>
+    function checkvalid(){
+        let zip = document.getElementById("zipCode");
+        zip.setCustomValidity('Hay algo mal :('); // mensaje de error personalizado
+
+        console.log(zip.value.length)
+        if(zip.value == '' ){
+            return false
+
+        }else {
+            return true;
+        }
+    }
+
+</script>
+
+</html>

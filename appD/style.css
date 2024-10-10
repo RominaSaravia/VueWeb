@@ -1,0 +1,30 @@
+form{
+    margin: 2rem 0;
+}
+
+input[type='submit']{
+    margin: 1rem 0;
+    padding: 0.4rem 0.8rem;
+}
+
+.user-input{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.5rem 0.5rem 0;
+    width: 45%;
+    min-width: 16rem;
+}
+.user-email{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.5rem 0.5rem 0;
+    width:90.5%;
+    min-width: 10rem;
+
+}
+.user-name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
