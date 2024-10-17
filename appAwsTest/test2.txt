@@ -1,0 +1,3 @@
+testeo
+usando resource
+Archivo para subir a S3 AWS
