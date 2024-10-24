@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {margin:1rem;position: relative;padding:1rem;width: 5rem;height: 5rem;border: 1px solid black;}
+    #div1{
+        box-shadow: 5px 5px 5px black;
+        
+    }
+    #div1:hover{
+        box-shadow: 5px 5px 5px grey;
+        transition-duration: 0.5s;
+
+    }
+
+    #div2{
+        
+        animation: divMove 5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes divMove {
+        from{
+            left: 0px;
+            top: 0px;
+
+        }
+        to{
+            left: 200px;
+            top: 200px;
+            transform: rotate(180deg) scale(1.2);
+
+        }
+    }
+
+    #mainDiv{
+        position: relative;
+        width: 25rem;
+        height: 30rem;
+    }
+
+</style>
+<body>
+   
+    <div id="mainDiv">
+        <div id="div1">
+            DIV
+        </div>
+        <div id="div2">
+            DIV
+        </div> 
+
+
+    </div>
+</body>
+</html>
